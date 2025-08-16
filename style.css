@@ -1,0 +1,400 @@
+:root {
+    --cor-principal: #ff7a24;
+    --cor-secundaria: #ABB2BF;
+    --cor-terciaria: #FFFFFF;
+    --background: #282C33;
+    --fonte: "Fira Code", monospace;
+}
+
+header{
+    display: flex;
+    margin: 0px;
+}
+
+#hLeft{
+    list-style: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte);
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+#hRight{
+    display: flex;
+    list-style: none;
+    text-align: right;
+    margin-left: 60%;
+}
+
+#hRight a{
+    background: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+#hRight li{
+    color: #ABB2BF;
+    margin: 10px;
+    font-family: var(--fonte);
+}
+
+.siteSelecionado{
+    color: var(--cor-terciaria);
+}
+
+body{
+    background-color: var(--background);
+}
+
+.main{
+    display: flex;
+    min-height: 500px;
+}
+
+#apresentacao{
+    font-family: var(--fonte);
+    color: var(--cor-terciaria);
+    font-size: 32px;
+    margin: 80px 100px;
+    min-height: 400px;
+}
+
+#proposta{
+    color: var(--cor-secundaria);
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+#apresentacaoBotao{
+    background: none;
+    border: 2px solid var(--cor-principal);
+    padding: 20px;
+    border-radius: 50px;
+    margin: 5px;
+    font-size: 16px;
+    color: var(--cor-terciaria);
+    cursor: pointer;
+}
+
+.destaque{
+    color: var(--cor-principal);
+}
+
+.project{
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.titulos{
+    display: flex;
+    font-family: var(--fonte);
+    color: var(--cor-terciaria);
+    font-size: 24px;
+    margin: 16px 80px ;
+}
+
+.titulos a{
+    background: none;
+    text-decoration: none;
+    color: inherit;
+    margin: 24px;
+    margin-left: 20%;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.containerProject{  /* aba project */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas de tamanho igual */
+    gap: 20px; /* Ajuste o gap conforme necessário */
+    padding: 10px;
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+.apresentacaoProjetos2{   /* aba project */
+    border: 2px solid var(--cor-secundaria);
+    padding: 0px;
+    font-size: 16px;
+    color: var(--cor-terciaria);
+    max-width: 330px;
+}
+
+.apresentacaoProjetos{
+    margin: 10px;
+    border: 2px solid var(--cor-secundaria);
+    padding: 0px;
+    margin: 5px;
+    font-size: 16px;
+    color: var(--cor-terciaria);
+    max-width: 330px;
+}
+
+#LinguagensUsadas{
+    font-family: var(--fonte);
+    font-size: 15px;
+    margin-top: 0%;
+    color: var(--cor-secundaria);
+    padding: 5px 15px;
+    border: 2px solid var(--cor-secundaria);
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#nomeDoProjeto{
+    font-family: var(--fonte);
+    color: var(--cor-terciaria);
+    font-size: 20px;
+    padding-left: 15px;
+    margin: 0%;
+}
+
+#projetoDescricao{
+    font-family: var(--fonte);
+    color: var(--cor-secundaria);
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+#BotoesDescricao{
+    font-family: var(--fonte);
+    background: none;
+    border: 2px solid var(--cor-principal);
+    padding: 15px;
+    margin: 10px;
+    font-size: 14px;
+    width: 119px;
+    height: 37px;
+    color: var(--cor-terciaria);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#ftPerfil{
+    min-width: 256px ;
+    height: 256px; 
+    margin-left: 15%;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 50%;
+}
+
+#ftPerfil img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+
+#minhaDescricao h1{
+    font-family: var(--fonte);
+    color: var(--cor-terciaria);
+    font-size: 30px;
+}
+
+#minhaDescricao{
+    margin-left: 40px;
+    font-family: var(--fonte);
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    padding-right: 7%;
+    text-align: justify;
+}
+
+#minhaDescricao button{
+    margin: 0%;
+}
+
+.imgLinguagens{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-around; /* Centraliza horizontalmente */
+    width: 100%;
+}
+
+.imgLinguagens img{
+    margin: 30px;
+}
+
+
+
+/* sobre */
+.containerSobre{
+    font-family: var(--fonte);
+    display: flex;
+    justify-content: space-around; /* Centraliza horizontalmente */
+}
+
+#escolar{
+    color: var(--cor-terciaria);
+    text-align: center;
+}
+
+#trabalhos{
+    color: var(--cor-terciaria);
+    text-align: center;
+    width: 100%;
+}
+
+.areaProfissional{
+    max-width: 50%;
+}
+
+.profissao{
+    font-family: var(--fonte);
+    border: 2px solid var(--cor-principal);
+    width: 400px;
+    text-align: justify;
+    padding: 2%;
+    margin-bottom: 40px;
+}
+
+.profissao h4{
+    text-align: left;
+
+}
+
+.profissao p{
+    font-family: var(--fonte);
+    color: var(--cor-secundaria);
+    text-align: justify;
+}
+
+.areaAcademica{
+    max-width: 50%;
+}
+
+.escola{
+    font-family: var(--fonte);
+    border: 2px solid var(--cor-principal);
+    width: 400px;
+    text-align: justify;
+    padding: 2%;
+}
+
+
+footer{
+    margin-top: 10px;
+    width: 100%;
+    font-family: var(--fonte);
+    display: flex;
+}
+
+#copyright{
+    font-size: 14px;
+}
+
+#Links{
+    margin-left: 25%;
+}
+
+footer button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 5px;
+    font: inherit;
+    color: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+footer p{
+    color: var(--cor-secundaria);
+}
+
+
+
+/* fomulario para contato */
+.contatoseformulario{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 180px;   
+}
+
+.contatoseformulario h2{
+    font-family: var(--fonte);
+    color: var(--cor-secundaria);
+    width: 100%;
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+.meuscontatos ul{
+    display: flex;
+    font-family: var(--fonte);
+    color: var(--cor-secundaria);
+    list-style-type: none;
+    padding: 2%;
+    margin-bottom: 40px;
+}
+
+.meuscontatos li{
+    padding: 10px;   /* Adiciona espaçamento entre os itens */
+    margin: 5px;
+    text-align: center;
+    width: 33%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+.formulario input,
+.formulario textarea {
+    font-family: var(--fonte);
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid var(--cor-secundaria);
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 140px;
+}
+
+#botaoform {
+    background: none;
+    border: 2px solid var(--cor-principal);
+    padding: 10px;
+    border-radius: 50px;
+    margin: 5px;
+    font-size: 16px;
+    color: var(--cor-terciaria);
+    cursor: pointer;
+    font-family: var(--fonte);
+    width: auto; /* Ajuste para o botão não ocupar mais que o necessário */
+}
+
+#botaodiv {
+    display: flex; /* Habilita o uso de flexbox no contêiner */
+    justify-content: center; /* Alinha o botão horizontalmente ao centro */
+    align-items: center; /* Alinha o botão verticalmente ao centro */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+}
